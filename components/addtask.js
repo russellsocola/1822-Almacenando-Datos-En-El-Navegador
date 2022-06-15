@@ -12,6 +12,9 @@ import deleteIcon from './deleteIcon.js';
         const date = calendar.value;
         const dateFormat = moment(date).format('DD/MM/YYYY');
 
+        if( value === '' || date === ''){
+            return
+        }
         input.value = '';
         calendar.value = '';
 
